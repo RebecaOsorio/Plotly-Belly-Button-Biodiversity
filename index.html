@@ -1,15 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Greek gods</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
-    <div id="plot"></div>
-    <script src="data.js"></script>
-    <script src="plots.js"></script>
-</body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span class="mb-0 h2">Home</span></a>        
+        <a class="navbar-brand" href="#bubble">Bubble Chart</a>
+        <a class="navbar-brand" href="#bar">Bar Chart</a>
+    </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 class="text-white">Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3", style="color:#231923">
+          <h1><b>Background</b></h1>
+        </div>
+        <div class="col-md-9" style="top: 20px">
+          <p> 
+            A biological researcher in a prominent microboology laboratory is interested
+            in bacteral species that have ability to synthesize that taste like beef, and
+            the had partnered with Improbable Beef; a food startups.</p>
+          <p>  
+            Labs across the country have had success in sinthesizing meat from algae, fungi, 
+            and microorganisms found on plant roots.</p>
+          <p>
+            However, Improbale Beef is still searching for the elusive bacteria that will provide
+            the perfect taste and Roza, the biological researcher, has a hypothesis that there's 
+            a microorganism that can supply the best taste, and she believes it can be found in 
+            the bacteria found on the belly button of a human body.</p>
+          <p>
+            To test her hypothesis, Roza has sampled the navels of people across the country to 
+            identify bacterial species that colonize our buttons. Each person has an ID number, 
+            to protect their identities.</p>
+          <p>
+            Now, she presents a dashboard in which the patients will be able to visit a website 
+            and select their ID numbers to see which bacterial species live in their navels.
+          </p><br><br><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+          <h5><b>Test Subject ID</b></h5>
+          <h6>No.:</h6>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"><b>Demographic Info</b></h3>
+            </div>
+            <div id="sample-metadata" class="panel-body"></div>
+          </div>
+        </div>
+        
+        <div class="col-md-8">
+          <div id="bubble"></div>
+        </div>
+
+        <div class="col-md-2" style="color:gray; top: 290px">
+            <p>This chart displays all the Bacteral Species found in the filtered Test Subject. </p>
+            <p>The size is relative to the count of sample for each species</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6" style="color:gray">
+          <div id="bar"></div>
+          Find the Top Ten Bacterial Cultures Found<br><br><br><br>
+        </div>
+        <div class="col-md-6" style="color:gray">
+          <div id="gauge"></div>
+          Count how many times a Belly Button is washed per week<br><br><br><br>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+</body> 
+
 </html>
