@@ -13,11 +13,12 @@ Now, she presents a dashboard in which the patients will be able to visit a webs
 For this Challenge, we completed the page that we were working on during the Module.
 We started with this:
 
----STARTPAGE
+![Starter Page](https://github.com/RebecaOsorio/Plotly-Belly-Button-Biodiversity/blob/main/image%20src/start_page.png)
 
 to turn it into this:
 
----FINALPAGE
+![Final Page](https://github.com/RebecaOsorio/Plotly-Belly-Button-Biodiversity/blob/main/image%20src/final_page.png)
+
 ### Resources
 
 To accomplish this project, we used:
@@ -34,18 +35,18 @@ To accomplish this project, we used:
 ### Bubble Chart
 We worked to display the Bacteria Cultures found in each Test Subject so the X-axis is the UTO Layout, and the amount of samples of the bacterial culture found in the belly button is represented in the Y-axis as in the size of the bubble. This way, the distribution of the samples found in the human body is easy to read.
 
----BUBBLECHART
+![Bubble Chart](https://github.com/RebecaOsorio/Plotly-Belly-Button-Biodiversity/blob/main/image%20src/bubble_chart.png)
 
 ### Bar Chart
 This chart shows the Top Ten biggest Bacterial Cultures found in the dataset, filtered for the Subject
 
----BARCHART
+![Bar Chart](https://github.com/RebecaOsorio/Plotly-Belly-Button-Biodiversity/blob/main/image%20src/bar_chart.png)
 
 
 ### Gauge Chart
 Roza found interesting to add a chart that shows how many times did the patient said he washed its bellybutton per week
 
----GAUGECHART
+![Gauge Chart](https://github.com/RebecaOsorio/Plotly-Belly-Button-Biodiversity/blob/main/image%20src/gauge_chart.png)
 
 
 
